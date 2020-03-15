@@ -18,7 +18,7 @@ function promptForLength() {
   let numberResponse = Number(userResponse);
   console.log(numberResponse);
   if(isNaN(numberResponse)) {
-      // console.log("is not number.");
+      userResponse = prompt("That's not a number. Please enter a number.");
     } 
     else {
       if (numberResponse < 128 && numberResponse > 0) {
@@ -53,7 +53,7 @@ function generatePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-/**
+/** PSEUDO CODE
  * declare Password array - will be empty
  * Data needed: length, 4 different values - lowercase, uppercase, numeric, special.
  * Create 4 arrays - each containing different types
