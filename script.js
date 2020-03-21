@@ -60,7 +60,7 @@ function promptForCharacters(question) {
 
 }
 
-/**A simpler, more succinct way to prompt for characters */
+/**A simpler, more succinct way to prompt for characters that I want to remember */
 // function promptForCharacters(question) {
 //   let response = prompt(question).toLowerCase();
 //   while(response !== "yes" && response !== "no") {
@@ -77,10 +77,10 @@ function generatePassword() {
   let useSpecial = false;
   
   do {
-    useNumbers = promptForCharacters("Do you want to use numbers?");
-    useLowerCase = promptForCharacters("Do you want to use lower case letters?");
-    useUpperCase = promptForCharacters("Do you want to use upper case letters?");
-    useSpecial = promptForCharacters("Do you want to use special characters?");
+    useNumbers = promptForCharacters("Do you want to use numbers? (yes or no)");
+    useLowerCase = promptForCharacters("Do you want to use lower case letters? (yes or no)");
+    useUpperCase = promptForCharacters("Do you want to use upper case letters? (yes or no)");
+    useSpecial = promptForCharacters("Do you want to use special characters? (yes or no)");
     if(!useNumbers && !useLowerCase && !useUpperCase && !useSpecial) {
       alert("You need to choose at least one character type.");
     }

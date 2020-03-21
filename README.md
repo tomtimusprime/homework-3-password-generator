@@ -1,3 +1,7 @@
+About this application:
+I created this with the user in mind, especially regarding handling different exceptions that might arise (i.e. character length being too short or too long. What happens if a number isn't entered, etc.). I also wanted to make good use of functions and to make the code more reusable. It's overall a pretty simple little application, simply start by clicking the generate password button and follow the prompts that will drop down. After a few simple questions, a secure password with the specified length and character types that the user wants included will be displayed on the page. 
+
+
 # 03 JavaScript: Password Generator
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
